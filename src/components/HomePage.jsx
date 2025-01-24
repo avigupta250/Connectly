@@ -1,15 +1,17 @@
-import React from 'react'
-import HeroScetion from './HomePage/HeroScetion'
+import React from "react";
+import HeroScetion from "./HomePage/HeroScetion";
 
-import { AnimatedTestimonials } from './HomePage/Testimonial'
-import testi1 from "../../public/TestiImage1.jpg"
-import testi2 from "../../public/TestiImage2.jpg"
-import testi3 from "../../public/TestiImage3.jpg"
+import { AnimatedTestimonials } from "./HomePage/Testimonial";
+import testi1 from "../../public/TestiImage1.jpg";
+import testi2 from "../../public/TestiImage2.jpg";
+import testi3 from "../../public/TestiImage3.jpg";
+import Features from "./HomePage/Features";
+import Footer from "./Common/Footer";
 
 const testimonials = [
   {
     quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
     name: "Sarah Chen",
     designation: "Product Manager at TechFlow",
     src: testi1,
@@ -26,7 +28,7 @@ const testimonials = [
       "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
     name: "Emily Watson",
     designation: "Operations Director at CloudScale",
-    src:testi1,
+    src: testi1,
   },
   {
     quote:
@@ -46,12 +48,14 @@ const testimonials = [
 
 const HomePage = () => {
   return (
-   <section className=' w-[100vw]'>
-       
-       <HeroScetion/>
-       <AnimatedTestimonials testimonials={testimonials} />
-   </section>
-  )
-}
+    <section className="">
+      <HeroScetion />
+      <AnimatedTestimonials testimonials={testimonials} />
+      <Features/>
+      <Footer/>
+  
+    </section>
+  );
+};
 
-export default HomePage
+export default HomePage;

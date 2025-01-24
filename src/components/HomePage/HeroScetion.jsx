@@ -48,7 +48,7 @@ const testimonials = [
 
 const HeroScetion = () => {
   return (
-    <section className=" w-[100vw] max-w-[100vw] overflow-x-hidden  bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F]">
+    <section className=" max-w-[100vw] overflow-x-hidden  bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F]">
       <NavBar />
       <div className="w-[90%] mt-[80px] overflow-hidden max-w-[90%] mx-auto">
         <div className="flex px-[200px] flex-col justify-center items-center ">

@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+.heading{
+    font-size: "30px",
+
+
+}
+
+.body{
+    background-color: blueviolet;
+}
