@@ -105,7 +105,7 @@ const Features = () => {
         {/* image */}
         <div className="relative mt-10 w-full h-full overflow-hidden">
           <motion.img
-          initial={{ opacity: 0, y: 70 }}
+          initial={{ opacity: 0.1, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
             className="absolute  top-0 w-full px-[150px] object-cover"
