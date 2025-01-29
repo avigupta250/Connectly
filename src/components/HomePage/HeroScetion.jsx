@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import NavBar from "../NavBar";
 import { CircleCheckBig } from "lucide-react";
@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import download from "../../../public/download.jpg";
 import Business from "../../../public/Businessman.jpg";
 import Sales from "../../../public/Sales-analytic.jpg";
+import Carousel from "../Common/Carousel";
 
 const testimonials = [
   {
@@ -48,80 +49,53 @@ const testimonials = [
 
 const HeroScetion = () => {
   return (
-    <section className=" max-w-[100vw] overflow-x-hidden  bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F]">
+    <section className=" max-w-[100vw] min-h-screen overflow-x-hidden  bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F]">
       <NavBar />
-      <div className="w-[90%] mt-[80px] overflow-hidden max-w-[90%] mx-auto">
-        <div className="flex px-[200px] flex-col justify-center items-center ">
-          <motion.div 
- initial={{ opacity:0, y: 30 }}
- animate={{ opacity:1,y: 0 }}
- transition={{duration:0.3}}
-          className="text-[90px] font-semibold border-spacing-x-narrow narrow  text-white  leading-[90px] text-center ">
-            Find, Contact&Close{" "}
-            
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#1275cb] via-[#a1f3ff] to-[#2975a7]">
-              Your Ideal Clients
-            </span>
-          </motion.div>
-          <motion.div
-          initial={{ opacity:0, y: 30 }}
-          animate={{ opacity:1,y: 0 }}
-          transition={{duration:0.3 ,delay:0.2}}
-           className="text-white text-[20px] px-[120px] font-semibold mt-[30px] text-center ">
-            Instantly helps you ifnd warm leads, scale email compaigns, reach
-            primary inboxes, engage smarter and win more with AI
-          </motion.div>
+      <div className="w-[90%] mt-[100px] text-white mx-auto flex  justify-between ">
+        <div className="w-1/2">
+          <p className="">The B2B SaaS Marketing Agency</p>
+          <h1 className="text-[50px] font-bold leading-[50px]">
+            Transform Your LinkedIn Presence Generate High-Quality Leads That
+            Convert
+          </h1>
+          <p className="px-6 mt-[20px]">
+            Expert LinkedIn Marketing Solutions that deliver measurable ROI. We
+            help businesses like yours attract, engage, and convert premium
+            clients through data-driven strategies.
+          </p>
 
-          <motion.button
-          initial={{ opacity:0, y: 30 }}
-          animate={{ opacity:1,y: 0 }}
-          transition={{duration:0.3,delay:0.4}} className="p-3 border-2 animate-border  font-bold text-white rounded-full px-10 text-[20px] mt-[30px]">
-            START FOR FREE
-          </motion.button>
-
-          <motion.div   initial={{ opacity:0, y: 30 }}
-          animate={{ opacity:1,y: 0 }}
-          transition={{duration:0.3,delay:0.6}} className="flex gap-12 mt-[30px] text-white font-semibold text-[18px]">
-            <div className="flex gap-2 items-center">
-              <span className="text-blue-300 bg-blu">
-                <CircleCheckBig />
-              </span>
-              <h1>No credit card required</h1>
-            </div>
-            <div className="flex gap-2 items-center">
-              <span className="text-blue-300">
-                <CircleCheckBig />
-              </span>
-              <h1>Free leads included</h1>
-            </div>
-          </motion.div>
+          <p className="px-6 mt-10 ">
+            Claim Your Free LinkedIn Campaign Audit Worth $997
+          </p>
+          <button className="bg-yellow-500 flex justify-center w-full p-2 rounded-md mt-[20px]">
+            Book Your Audit Now
+          </button>
         </div>
 
-        {/* photos */}
-        <div className="flex justify-center gap-10 mb-[100px] mt-[80px]">
-          <Image
-            width={400}
-            className="rounded-lg object-cover"
-            height={400}
-            src={download}
-            alt="business"
-          />
-          <Image
-            width={400}
-            className="rounded-lg object-cover"
-            height={400}
-            src={Sales}
-            alt="business"
-          />
-          <Image
-            width={400}
-            className="rounded-lg object-cover"
-            height={400}
-            src={Business}
-            alt="business"
-          />
+        <div className="flex flex-col gap-5 mt-8 px-[100px] text-black">
+          <div className="flex bg-white gap-3 p-5  rounded-md ">
+            <span>LOGO</span>
+            <p>Data-Driven ROI Optimisation</p>
+          </div>
+          <div className="flex bg-white gap-3 p-5  rounded-md ">
+            <span>LOGO</span>
+            <p>Data-Driven ROI Optimisation</p>
+          </div>
+          <div className="flex bg-white gap-3 p-5  rounded-md ">
+            <span>LOGO</span>
+            <p>Data-Driven ROI Optimisation</p>
+          </div>
+          <div className="flex bg-white gap-3 p-5  rounded-md ">
+            <span>LOGO</span>
+            <p>Data-Driven ROI Optimisation</p>
+          </div>
         </div>
       </div>
+     
+       <div className="mt-[50px]">
+       <Carousel />
+       </div>
+     
     </section>
   );
 };

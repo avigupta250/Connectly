@@ -1,3 +1,4 @@
+import {Carousel} from '@/src/components/Common/Carousel';
 import './globals.css';
 
 import HomePage from "@/src/components/HomePage";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
    
    <HomePage/>
+
   
   );
 }

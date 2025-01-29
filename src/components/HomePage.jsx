@@ -7,6 +7,8 @@ import testi2 from "../../public/TestiImage2.jpg";
 import testi3 from "../../public/TestiImage3.jpg";
 import Features from "./HomePage/Features";
 import Footer from "./Common/Footer";
+import Carousel from "./Common/Carousel";
+
 
 const testimonials = [
   {
@@ -50,6 +52,9 @@ const HomePage = () => {
   return (
     <section className="">
       <HeroScetion />
+      <div className="mt-[50px]">
+    {/* <Carousel/> */}
+       </div>
       <AnimatedTestimonials testimonials={testimonials} />
       <Features/>
       <Footer/>
