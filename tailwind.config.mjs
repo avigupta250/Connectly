@@ -9,8 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        purplee:{
+          100:"#e9caff",
+          200:"#c1a4ec",
+          300:"#9b80c5",
+          400:"#765d9f",
+          500:"#533c7b",
+          600:"#3f2a67"
+         },
       },
       spacing: {
         'narrow': '-2px',

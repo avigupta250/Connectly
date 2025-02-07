@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { features, revenue } from "@/src/Constant";
+import { features, features2, revenue } from "@/src/Constant";
 import Image from "next/image";
 import { motion } from "motion/react";
+import Reviews from "../Common/Reviews";
 
 const Features = () => {
   return (
@@ -66,6 +67,28 @@ const Features = () => {
         ))}
       </div>
 
+      {/* features2 */}
+
+      <div className="w-  mt-[100px] bg-black ">
+        <div className="w-[90%] px-[100px] mx-auto p-20 gap-10 flex">
+        {features2.map((feature, index) => (
+          <div key={index} className="bg-white flex w-[30%] flex-col gap-5  p-6">
+            <div className=" ">
+              <img src={feature.image} alt="image" />
+            </div>
+            <div className="bg-purplee-400 w-fit p-1 text-white font-bold rounded-md">PHASE 1</div>
+
+            <h1 className="font-bold text-[20px]">{feature.title1}</h1>
+            <p>{feature.desc}</p>
+          </div>
+        ))}
+        </div>
+       
+      </div>
+
+{/* reviews */}
+
+     <Reviews/>
       {/* Respond to lead section */}
       <div className="w-[90%] h-[800px] mt-[100px] rounded-t-3xl mx-auto bg-black bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#100b18] via-[#181a45] to-[#171A3F flex flex-col">
         <div className="flex flex-col mt-[40px] items-center gap-6">
@@ -105,9 +128,9 @@ const Features = () => {
         {/* image */}
         <div className="relative mt-10 w-full h-full overflow-hidden">
           <motion.img
-          initial={{ opacity: 0.1, y: 70 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+            initial={{ opacity: 0.1, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="absolute  top-0 w-full px-[150px] object-cover"
             src="https://cdn.prod.website-files.com/63860c8c65e7bef4a1eeebeb/638a6dde57859f7455bbc850_mmf.png"
             alt="Unibox"
@@ -189,7 +212,7 @@ const Features = () => {
             className="md:text-[50px] md:leading-[60px]  font-serif font-semibold"
           >
             Learn From The Best in
-            <br/>
+            <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#72589e] via-[#57407d] to-[#3d2465]">
               Our Private Community
             </span>
@@ -220,11 +243,12 @@ const Features = () => {
           <div className="absolute h-[200px] top-[100px]  md:top-[100px] md:right-[50px] w-[400px]">
             <img src="https://i.pinimg.com/736x/db/4d/f1/db4df1a792626bd1d60a0772038365ef.jpg" />
             <motion.h1
-             initial={{ opacity: 0, y: 70 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.5, delay: 0.5 }}
-             viewport={{ once: true }}
-             className="absolute font-serif font-bold text-[40px] top-[100px] left-[92px] text-[#4b1787]">
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="absolute font-serif font-bold text-[40px] top-[100px] left-[92px] text-[#4b1787]"
+            >
               Connectly
             </motion.h1>
           </div>

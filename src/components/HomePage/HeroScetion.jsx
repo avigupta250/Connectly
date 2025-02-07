@@ -58,16 +58,16 @@ const HeroScetion = () => {
             Transform Your LinkedIn Presence Generate High-Quality Leads That
             Convert
           </h1>
-          <p className="px-6 mt-[20px]">
+          <p className="mt-[20px]">
             Expert LinkedIn Marketing Solutions that deliver measurable ROI. We
             help businesses like yours attract, engage, and convert premium
             clients through data-driven strategies.
           </p>
 
-          <p className="px-6 mt-10 ">
+          <p className=" mt-10 ">
             Claim Your Free LinkedIn Campaign Audit Worth $997
           </p>
-          <button className="bg-yellow-500 flex justify-center w-full p-2 rounded-md mt-[20px]">
+          <button className="bg-[#7759ab] flex justify-center px-[40px] p-2 rounded-full mt-[20px]">
             Book Your Audit Now
           </button>
         </div>
