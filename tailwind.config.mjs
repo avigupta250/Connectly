@@ -18,6 +18,7 @@ export default {
           600:"#3f2a67"
          },
       },
+     
       spacing: {
         'narrow': '-2px',
         'wider': '4px',

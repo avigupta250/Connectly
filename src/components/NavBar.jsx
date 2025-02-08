@@ -56,18 +56,18 @@ const colors = [
 ];
 const NavBar = () => {
   return (
-    <nav className="w-[100vw]   ">
-      <div className="flex w-[90%] relative   p-4 px-0 font-bold text-white  mx-auto  justify-between  items-center  ">
+    <nav className="w-[100vw] text   ">
+      <div className="flex w-[90%] relative   p-4 px-0 font-bold   mx-auto  justify-between  items-center  ">
         {/* Brand Name */}
-        <div className="text-[30px] font-bold text-white ">Connectly</div>
+        <div className="text-[30px] font-bold  ">Connectly</div>
 
         {/* Nav Items */}
-        <div className="text-[20px] ">
+        <div className="text-[18px] ">
           <NavButtons />
         </div>
 
         {/* Request button */}
-        <button className="border text-[20px] rounded-full px-2 py-1">
+        <button className="border text-[20px] text-white bg-blue-600 rounded-full px-2 py-1">
           Request Demo
         </button>
       </div>
@@ -92,7 +92,7 @@ function NavButtons() {
          
         >
           <div className="flex gap-1  justify-center items-center">
-            <button className="hover:text-purple-400 ">{item.title}</button>
+            <button className="hover:text-purple-400 font-semibold ">{item.title}</button>
             <span>
               {activeDropdown === index ? <ChevronUp /> : <ChevronDown />}
             </span>
@@ -103,7 +103,7 @@ function NavButtons() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 10 }}
-              className="absolute top-ful  mt-2   bg-white shadow-lg rounded-md  "
+              className="absolute top-ful  mt-2   bg-white shadow-2xl rounded-md  "
             >
               <motion.div className="grid  grid-cols-2 px-4  gap-x-6">
                 {item.links.map((link, linkIndex) => (
