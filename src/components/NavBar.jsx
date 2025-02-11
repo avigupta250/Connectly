@@ -56,7 +56,7 @@ const colors = [
 ];
 const NavBar = () => {
   return (
-    <nav className="w-[ overflow-x-hidden   ">
+    <nav className="  ">
       <div className="flex w-[90%] relative   p-4 px-0 font-bold   mx-auto  justify-between  items-center  ">
         {/* Brand Name */}
         <div className="text-[30px] font-bold  ">Connectly</div>
