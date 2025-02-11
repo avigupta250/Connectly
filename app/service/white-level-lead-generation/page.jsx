@@ -1,3 +1,4 @@
+import Faq from "@/src/components/Common/Faq";
 import { features } from "@/src/Constant";
 import { Magnet, Plus } from "lucide-react";
 import React from "react";
@@ -44,17 +45,17 @@ const pricingCard = [
   },
 ];
 
-const Herosection = () => {
+const Page = () => {
   return (
     <section>
       <div className="flex justify-center">
-        <div className="flex p-10 w-[50%] flex-col gap-6 text-center">
+        <div className="flex p-10 w-[60%] flex-col gap-6 text-center">
           <h1 className="text-[50px] md:leading-[60px] font-bold text-blue-600">
-          LinkedIn Paid Ads That Actually Convert
-         
+          White-Label Lead Generation That Drives Results
+
           </h1>
           <h2 className="text-[20px] md:leading-[25px]">
-          Our agency runs high-ROI LinkedIn ad campaigns that attract and convert your ideal prospects. With precision targeting and AI-driven creatives, we deliver measurable results—100% done for you.
+          Our agency delivers high-quality leads under your brand, allowing you to scale effortlessly. We handle strategy, outreach, and optimization—100% done for you.
           </h2>
 
           <div>
@@ -145,8 +146,9 @@ const Herosection = () => {
           
         </div>
       </div>
+      <Faq/>
     </section>
   );
 };
 
-export default Herosection;
+export default Page;

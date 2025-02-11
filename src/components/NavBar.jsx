@@ -18,12 +18,12 @@ const navItems = [
   {
     title: "Services",
     links: [
-      { name: "LinkedIn Paid Ads", href: "#", icon:<FaUsers/> },
-      { name: "LinkedIn Leads Generation", href: "#", icon:<BsDatabaseFillCheck/> },
-      { name: "Strategic LinkedIn Content", href: "#", icon:<MdMarkEmailRead/> },
-      { name: "White-Label Lead Generation", href: "#", icon:<HiMiniUsers/> },
-      { name: "Cold Email Lead Generation", href: "#", icon:<TbWorld/>},
-      { name: "Advanced Lead Gen Masterclass", href: "#", icon:<MdMail/>},
+      { name: "LinkedIn Paid Ads", href: "/service/linkedin-paid-ads", icon:<FaUsers/> },
+      { name: "LinkedIn Leads Generation", href: "/service/linkedin-leads-generation", icon:<BsDatabaseFillCheck/> },
+      { name: "Strategic LinkedIn Content", href: "/service/strategic-linkedin-content", icon:<MdMarkEmailRead/> },
+      { name: "White-Label Lead Generation", href: "/service/white-level-lead-generation", icon:<HiMiniUsers/> },
+      { name: "Cold Email Lead Generation", href: "/service/cold-email-leads-generation", icon:<TbWorld/>},
+      { name: "Advanced Lead Gen Masterclass", href: "/service/advanced-lead-gen-masterclass", icon:<MdMail/>},
       
     ],
   },

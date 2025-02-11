@@ -53,51 +53,44 @@ const testimonials = [
 
 const HeroScetion = () => {
   return (
-    <section className=" max-w-[100vw] min-h-screen overflow-x-hidden  ">
+    <section className=" max-w-[100vw]  overflow-x-hidden  ">
       {/* bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F] */}
       <NavBar />
-      <div className="w-[90%] mt-[70px] mx-auto flex  justify-between ">
-        <div className="w-1/2 text-[20px] text-gray-800">
+      <div className="w-[90%] mt-[100px] mx-auto flex items-center justify-between ">
+        <div className="w-[60%] text-[20px] text-gray-800">
           <p className="">The B2B SaaS Marketing Agency</p>
-          <h1 className="md:text-[50px] text-black font-bold md:leading-[60px]">
+          <h1 className="md:text-[60px] text-black font-bold md:leading-[60px]">
             Transform Your LinkedIn Presence Generate<span className="text-blue-700"> High-Quality Leads</span> That
             Convert
           </h1>
-          <p className="mt-[20px] ">
+          <p className="mt-[30px] text-[17px] ">
             Expert LinkedIn Marketing Solutions that deliver measurable ROI. We
             help businesses like yours attract, engage, and convert premium
             clients through data-driven strategies.
           </p>
 
-          <p className=" mt-10 ">
+          <p className=" mt-6 text-[20px] font-semibold ">
             Claim Your Free LinkedIn Campaign Audit Worth $997
           </p>
-          <button className="bg-blue-600 text-white flex justify-center px-[40px] p-3 font-bold  rounded-full mt-[20px]">
+          <div className="flex left-[50px] ">
+          <button className="bg-blue-600 mx-[80px] text-white flex justify-center text-center px-[60px] p-3 font-bold  rounded-full mt-[20px]">
             Book Your Audit Now
           </button>
+          </div>
+         
 
           <div>
 
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mt-8 px-[100px text-[18px] text-gray-800">
-          <div className="flex bg-slate-100 gap-3 p-4 border items-center   rounded-md ">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center text-xl bg-blue-200 text-blue-700"><FaSackDollar/></div>
-            <p>$11.1M in SEO Pipeline for Data Privacy SaaS</p>
+        <div className="">
+
+
+          <div className="w-[500px] h-[300px] flex justify-center items-center rounded-full object-cover">
+            <img  className="rounded-full w-[400px] h-[400px] object-cover"  src="https://i.pinimg.com/736x/58/57/ca/5857ca72e7b25c77bce40ae57139730c.jpg" alt="image"/>
           </div>
-          <div className="flex bg-slate-100 gap-3 p-4 border items-center   rounded-md">
-            <span className="w-10 h-10 rounded-full flex items-center justify-center text-xl bg-blue-200 text-blue-700"><ChartNoAxesCombined/></span>
-            <p>135% of Paid Ads Pipeline Target Delivered for CyberSec SaaS</p>
-          </div>
-          <div className="flex bg-slate-100 gap-3 p-4 border items-center   rounded-md ">
-            <span className="w-10 h-10 rounded-full flex items-center justify-center text-xl bg-blue-200 text-blue-700"><Trophy/></span>
-            <p>2X Higher MQL.SQL Coversion wuth ABM Targeting Named Accounts</p>
-          </div>
-          <div className="flex bg-slate-100 gap-3 p-4 border items-center   rounded-md ">
-            <span className="w-10 h-10 rounded-full flex items-center justify-center text-xl bg-blue-200 text-blue-700"><Medal /></span>
-            <p>135% of Paid Ads Pipeline Target Delivered for CyberSec SaaS</p>
-          </div>
+          
         </div>
       </div>
      

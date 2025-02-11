@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowBigDownIcon } from "lucide-react";
+import { ArrowBigDownIcon, ChevronDown, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
@@ -58,7 +58,8 @@ const Faq = () => {
               <div className="flex justify-between items-center">
                 <h1 className="text-xl">{faq.question}</h1>
                 <span>
-                  <ArrowBigDownIcon
+                  <ChevronDown
+
                     className={`transition-transform duration-300 ${
                       showAnswer === index ? "rotate-180" : ""
                     }`}

@@ -100,7 +100,7 @@ const Features = () => {
           >
             Respond to Leads ans Close Deals <br /> with{" "}
             <span className="">
-              Unibox
+              Connecttly
             </span>
           </motion.h1>
           <motion.p
@@ -109,7 +109,7 @@ const Features = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="font-serif w-[40%] text-center text-white md:leading-[25px] text-[20px] font-semibold"
           >
-            Manage conversations across inboxes in Unibox. AI Custom Reply
+            Manage conversations across inboxes in Connecttly. AI Custom Reply
             Labels automatically categorize responses for you, so you can focus
             on moving your outbound pipeline forward, from Interested to
             Closed-Won.
