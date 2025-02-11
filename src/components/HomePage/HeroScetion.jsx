@@ -55,7 +55,7 @@ const HeroScetion = () => {
   return (
     <section className=" max-w-[100vw]  overflow-x-hidden  ">
       {/* bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#533c7b] via-[#181a45] to-[#171A3F] */}
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="w-[90%] mt-[100px] mx-auto flex items-center justify-between ">
         <div className="w-[60%] text-[20px] text-gray-800">
           <p className="">The B2B SaaS Marketing Agency</p>
